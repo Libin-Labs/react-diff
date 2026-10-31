@@ -1,0 +1,58 @@
+.lp-diff {
+  --lp-diff-add: #dcf5e3;
+  --lp-diff-remove: #ffe2e2;
+  --lp-diff-ink: #17212b;
+  font:
+    13px/1.6 ui-monospace,
+    monospace;
+  color: var(--lp-diff-ink);
+}
+.lp-diff__scroll {
+  overflow: auto;
+  max-width: 100%;
+}
+.lp-diff table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.lp-diff th {
+  text-align: left;
+}
+.lp-diff td,
+.lp-diff th {
+  vertical-align: top;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #d5dce2;
+}
+.lp-diff__number {
+  width: 3rem;
+  text-align: right;
+  color: #475569;
+  user-select: none;
+}
+.lp-diff__sign {
+  width: 1rem;
+  text-align: center;
+}
+.lp-diff__text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.lp-diff--add {
+  background: var(--lp-diff-add);
+}
+.lp-diff--remove {
+  background: var(--lp-diff-remove);
+}
+.lp-diff__gap {
+  text-align: center;
+  background: #edf2f7;
+}
+.lp-diff__newline {
+  font-style: italic;
+  opacity: 0.8;
+}
+.lp-diff :focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
